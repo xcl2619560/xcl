@@ -464,8 +464,7 @@ class DlgWeibullMCMC(QDialog):
             for line  in fin :
                 if line.startswith('#') or (line.strip() == ''): continue
                 toks = [t for t in line.split()]
-                data.append({'let':toks[0], 'phi':toks[1],\
-                             'k':toks[2]})
+                data.append({'let':toks[0], 'phi':toks[1], 'k':toks[2]})
             return data
 
     def setEnableButton(self):
