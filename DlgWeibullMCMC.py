@@ -515,3 +515,4 @@ if __name__ == "__main__":
     dlg = DlgWeibullMCMC()
     dlg.show()
     app.exec_()
+    #this is test
