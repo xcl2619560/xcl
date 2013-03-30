@@ -513,9 +513,6 @@ class DlgWeibullMCMC(QDialog):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    #translator = QTranslator()
-    #translator.load("CN_DlgWeibullMCMC.qm")
-    #app.installTranslator(translator)
     dlg = DlgWeibullMCMC()
     dlg.show()
     app.exec_()
