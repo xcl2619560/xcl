@@ -369,9 +369,10 @@ class DlgWeibullMCMC(QDialog):
         _histDlg.show()
 
     def onCorrClicked(self):
+        #this place have a problem
         _corrDlg = DlgCorrelation(self.mcmcHistory, self)
         _corrDlg.showFullScreen()
-
+        
     def onBestFitClicked(self):
         _bestfitDlg = DlgBestFit(self.bestFit, self)
         _bestfitDlg.show()
