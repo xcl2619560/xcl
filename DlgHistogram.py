@@ -65,7 +65,7 @@ class DlgHistogram(QDialog):
             raise TypeError
 
         super(DlgHistogram,self).__init__(parent)
-        tr = self.tr
+        #tr = self.tr
 
         self.mcmcHistory = mcmcHistory
         unicodeLabels = mcmcHistory.getPrettyLabel(fmt=mcmcHistory.FmtUnicode)
@@ -80,7 +80,7 @@ class DlgHistogram(QDialog):
 
         self.btBox = QDialogButtonBox(QDialogButtonBox.Close)
 
-        self.setWindowTitle(tr('Histogram'))
+        self.setWindowTitle(self.tr('Histogram'))
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.mainLayout = QVBoxLayout()
         self.mainLayout.addWidget(tabWidget)

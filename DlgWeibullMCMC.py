@@ -512,6 +512,10 @@ class DlgWeibullMCMC(QDialog):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    translator = QTranslator()
+    isLoad = translator.load("WeibullFit_zh_CN.qm")
+    print "&&&&&&&&&&& isLoad =",isLoad
+    app.installTranslator(translator)    
     dlg = DlgWeibullMCMC()
     dlg.show()
     app.exec_()
